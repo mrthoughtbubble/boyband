@@ -1,0 +1,13 @@
+
+
+tr:nth-child(odd) {
+background-color:#eee; }
+
+tr:nth-child(even) {
+background-color:#fff; }
+
+
+.centerthistext {
+text-align:center;
+
+}
