@@ -1,13 +1,158 @@
 
+body {
+background-color:black;
+font-family:"Arial",Georgia,Serif;
+
+}
+
+
+#page {
+width:1280px;
+min-height:660px;
+background:url('images/boybandbackground.jpg') no-repeat center left;
+
+}
+
+#nav {
+background-color:black;
+color:white;
+height:35px;
+padding:5px;
+text-transform:uppercase;
+font-size:.9em;
+}
+
+#nav a{
+color:white;
+text-decoration:none;
+padding:5px;
+}
+
+#nav a:hover
+{ 
+background-color:violet;
+color:yellow;
+font-weight:900;
+}
+
+td a:hover {
+background-color:orange;
+height:150px;
+width::150px;
+
+}
+
+td a:active{
+
+background-color:yellow;
+height:150px;
+width::150px;
+
+}
+
+
+#nav form {
+float:right;
+margin: 0px 50px 0px 0px;
+}
+
+.form-submit-button{
+background:#B9DFFF;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+}
+.form-submit-button:hover{
+background:#016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+}
+
+
+#centerdiv{
+width:100%;
+margin:0 auto;
+ opacity: .50; /* Standard: FF gt 1.5, Opera, Safari, CSS3 */
+    filter: alpha(opacity=50); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=50)"; /* IE 8 */
+    -khtml-opacity: .50; /* Safari 1.x */
+    -moz-opacity: .50; /* FF lt 1.5, Netscape */
+}
+
+#listtable {
+position:absolute;
+width:100%;
+
+
+}
+
+table {
+margin:0 auto;
+margin-top:50px;
+width:550px;
+
+
+}
+
+td {
+padding:5px 5px 5px 5px;
+
+}
+
+
+th {
+background-color:black;
+font-family:"Arial",Georgia,Serif;
+color:white;
+
+}
+
 
 tr:nth-child(odd) {
-background-color:#eee; }
+background-color:#eee;
+}
 
 tr:nth-child(even) {
-background-color:#fff; }
+background-color:#fff;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+/* Default State */
+#booked {
+   background: green;
+   width: 400px;
+   height: 100px;
+   line-height: 100px;
+   color: white;
+   text-align: center;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ div {
+   background: red;
+}
 
 
 .centerthistext {
 text-align:center;
 
 }
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
